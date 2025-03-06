@@ -1,38 +1,56 @@
 body {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
+    margin: 0;
     background-color: white;
 }
-
 .board {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    width: 90vw;
-    max-width: 600px;
-    margin-bottom: 20px;
-}
-
-.square {
-    width: 100%;
-    padding-top: 25%;
-    background-color: #00587a;
-    border-radius: 10px;
+    grid-template-columns: repeat(6, 65px);
+    grid-template-rows: repeat(5, 60px);
+    gap: 8px;
     position: relative;
 }
-
-.pieces {
-    display: flex;
-    gap: 10px;
+.square {
+    width: 65px;
+    height: 60px;
+    background-color: #0A5275;
+    border-radius: 10px;
 }
 
 .circle {
-    width: 50px;
-    height: 50px;
+    width: 16px;
+    height: 16px;
     background-color: red;
     border-radius: 50%;
-    cursor: grab;
+    margin-left: 20px;
+    /* position: absolute; */
+    top: 5px;
+    left: 5px;
 }
+
+.square:nth-child(1) { grid-column: 1; grid-row: 1; }
+.square:nth-child(2) { grid-column: 2; grid-row: 1; }
+.square:nth-child(3) { grid-column: 3; grid-row: 1; }
+.square:nth-child(4) { grid-column: 4; grid-row: 1; }
+.square:nth-child(5) { grid-column: 5; grid-row: 1; }
+.square:nth-child(6) { grid-column: 6; grid-row: 1; }
+.square:nth-child(7) { grid-column: 1; grid-row: 2; }
+
+.square:nth-child(8) { grid-column: 1; grid-row: 3; }
+.square:nth-child(9) { grid-column: 2; grid-row: 3; }
+.square:nth-child(10) { grid-column: 3; grid-row: 3; }
+.square:nth-child(11) { grid-column: 4; grid-row: 3; }
+.square:nth-child(12) { grid-column: 5; grid-row: 3; }
+.square:nth-child(13) { grid-column: 6; grid-row: 3; }
+.square:nth-child(14) { grid-column: 6; grid-row: 4; }
+
+
+.square:nth-child(15) { grid-column: 6; grid-row: 5; }
+.square:nth-child(16) { grid-column: 5; grid-row: 5; }
+.square:nth-child(17) { grid-column: 4; grid-row: 5; }
+.square:nth-child(18) { grid-column: 3; grid-row: 5; }
+.square:nth-child(19) { grid-column: 2; grid-row: 5; }
+.square:nth-child(20) { grid-column: 1; grid-row: 5; }
